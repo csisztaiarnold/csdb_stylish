@@ -1,51 +1,113 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-/* Set the global font */
+/* 
+--------------------------------------
+GENERAL STYLES 
+--------------------------------------
+*/
+
+/* Font */
 * {
-    font-family:Open Sans;
+    font-family:"Open Sans" !important;
+    font-size:13px !important;
+    line-height:22px !important;
+    color:#888;
 }
 
-/* Remove the background images from the tables */
-td, table, tr {
-	background:none !important;   
+/* Links 
+
+a > font is used everywhere, but it doesn't seem like a good idea to set it globally, as it fucks up some anchored titles 
+*/
+a, a:hover, a > b {
+    color:#528BC5 !important;
 }
 
-/* Black is too dark for background. Goodbye true black! */
-body,
-body > table, body > table > tbody > tr:nth-child(1) > td > table,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table {
+/* Strong */
+b {
+    font-weight:bold !important;  
+}
+
+/* Images */
+img {
+padding:0;
+margin:0;
+}
+
+/* Quotes */
+blockquote {
+    background-color:#222;
+    padding:10px;
+}
+
+blockquote i {
+    font-style:normal !important;
+    font-size:12px !important;
+}
+
+/* Remove padding from the body and tables */
+body, table {
+    padding:0;
+    margin:0;
+    border:0;
+    background:none !important;
+}
+
+body {
+    width:100%;
+    background-color:#000 !important;
+}
+
+/* Table rows and cells */
+tr, td {
+    padding:0;
+    margin:0;
+    background:none !important;
+    border:0;
+}
+
+/* Horizontal lines */
+hr {
+    border:none;
+    border-bottom:1px dotted #444;
     background:none;
-	background-color:#222  !important;   
+    margin:15px 0 15px 0;
+    padding:0;
 }
 
-/* Fix main container */
-body > table {
-	width:100%;
-    padding:90px 15px 0 15px;
-}
+
+
+/* 
+--------------------------------------
+HEADER
+--------------------------------------
+*/
 
 /* Remove logo */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(2) > a > img {
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(2) > a > img,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > img,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > font,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > br
+{
     display:none;
 }
 
 /* Position the new logo absolutely */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(2) > a {
-	display:block;
-    width:160px;
+    display:block;
+    width:150px;
     height:70px;
     position:absolute;
-    top:10px;
+    top:4px;
     left:0;
- 	text-align:center;
+    text-align:center;
 }
 
 /* New logo will be textual */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(2) > a:before {
     display:inline-block;
     text-align:center;
-    font-size:50px;
+    font-size:44px;
     line-height:44px;
     font-weight:bold;
     padding:5px 10px 5px 0;
@@ -58,705 +120,500 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > 
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(2) > a:after {
     display:inline-block;
     text-align:center;
-    font-size:10px;
+    font-size:9px;
     line-height:0;
     font-weight:bold;
-    padding:5px 10px 5px 0;
+    padding:2px 10px 5px 0;
     content:"Commodore Scene Database";
     font-family:Oswald;
     color:#F5F5F5;
 }
 
-/* Logo hover */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(2) > a:hover:before,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(2) > a:hover:after { 
-	color:#FFF;   
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(3) > font, body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td > font {
+	display:block !important;
+    font-size:11px !important;
+    padding:0 0 20px 0;
 }
 
-/* Remove menu images */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a img {
-	display:none;
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(3) > font > b > a > font,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(3) > font > b:nth-child(2),body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td > font > b:nth-child(1) > a > font,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td > font > b {
+    font-size:11px !important;  
 }
 
-/* The new menu images will be textual */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:before  {
-    display:inline-block;
-    text-align:center;
-    font-size:12px;
-    color:#bbb;
-    font-weight:bold;
-    padding:5px 10px 5px 10px;
-	background-color:#333;
-    margin-right:5px;
+
+/* 
+--------------------------------------
+// HEADER
+--------------------------------------
+*/
+
+
+
+/* 
+--------------------------------------
+SITE CONTAINER
+--------------------------------------
+*/
+
+/* Container table */
+body > table {
+    margin-top:80px;
+    width:100%;
+}
+
+body > table > tbody > tr:nth-child(1) > td {
+    padding:0 15px 0 15px !important;
+}
+
+/* 
+--------------------------------------
+// SITE CONTAINER
+--------------------------------------
+*/
+
+
+
+/* 
+--------------------------------------
+LEFT SIDEBAR
+--------------------------------------
+*/
+
+/* Clear it up from border images */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(1) > table > tbody > tr:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(1) > table > tbody > tr:nth-child(2) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(1) > table > tbody > tr:nth-child(2) > td:nth-child(3),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(1) > table > tbody > tr:nth-child(3),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(3),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(3),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(3),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(3),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(1) > td:nth-child(1) > img,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > img,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(1) > td:nth-child(3) > img,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(3),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(3)
+{
+    display:none;    
+}
+
+/* Statistics, Oneliner, Donation, We Love - full width */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(2) > table {
+    width:100% !important;
+}
+
+/* Set a fixed width for the sidebar */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(1) > table > tbody > tr:nth-child(2) > td:nth-child(2) > table,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(2) > table {
+    width:140px !important;   
+}
+
+/* Left sidebar headers general */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(1):before,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2):before,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3):before, 
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(2):before {
+    content:"Statistics";
+    font-size:14px !important;
+    padding:0 0 2px 0; 
+    font-weight:bold !important;
     text-transform:uppercase;
-}
-
-/* Hover */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:hover:before {
-	color:#FFF;   
-}
-
-/* Here be menu labels */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(1):before {
-	content:"Userpage";
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(2):before {
-	content:"Brpwse";
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(3):before {
-	content:"Help";
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(4):before {
-	content:"Statistics";
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(5):before {
-	content:"Forums";
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(6):before {
-	content:"RSS";
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(7):before {
-	content:"Donate";
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(2):before {
-	content:"Log Out";
-}
-
-/* CSDb view mode and user status layout */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td {
-	background-color:#333 !important;   
-	padding:5px 10px 5px 10px ;
-}
-
-/* CSDb view mode and user status font */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td font {
-    color:#999 !important; 
-    font-size:11px;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td > font > b:nth-child(1) > a > font {
-    color:#79A7E6 !important;
-}
-
-/* Whitespace between header and main container */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table {
-	margin-bottom:15px !important;   
-}
-
-/* Site title, stats and introduction text are for lamahz */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > img,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > br,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > font,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(1) > table {
-	display:none;   
-}
-
-/* This be left sidebar */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) {
-	width:10%;
-}
-
-/* Hide oneliner title */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody img {
-	display:none;   
-}
-
-/* Add nicer oneliner title */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2):before {
-	content:"POOPLINER";
     display:block;
     text-align:center;
-    font-size:13px;
-    color:#bbb;
-    font-weight:bold;
-    padding:0 0 5px 0;
-	border-bottom:1px dashed #555;
-    margin-bottom:7px;
-    font-family:Open Sans;
+    border-bottom:1px solid #222;
+    margin:0 0 5px 0;
+    color:#AAA;
+}
+
+/* Oneliner header */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2):before {
+    content:"💩";
+    padding-top:20px;
+}
+
+/* Donate header */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3):before {
+    content:"Donate";
+    padding-top:20px;   
+}
+
+/* Donation BR tags */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(2) br {
+    display:none;
 }
 
 /* Oneliner input field */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2) > input.in1 {
-	padding:4px;
-    border:none;
-    width:100%;
-    font-size:11px;
-    background-color:#555;
-    color:#aaa;
+    font-size:12px !important;
+    width:100% !important;
+    background-color:#666 !important;
+    padding:2px;
+    color:#ccc;
+    line-height:12px !important;
+    border:0 !important;
+    margin:3px 0 0 0 !important;
 }
 
-/* No need for the submit button on the oneliner, use the enter */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2) > input[type="image"] {
-	display:none; 
+/* Oneliner submit */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2) > input[type="image"]:nth-child(2) {
+    display:none;   
 }
 
-/* Oneliner styling */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td font {
-    display:block;
-    padding:5px 0 10px 0;
-    color:#aaa;
-    font-size:11px;
-}
-
-/* Oneliner handle styling */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td i {
-	color:#ddd;
+/* Oneliner handles */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2) i {
+    font-size:12px !important;
+    font-weight:bold;
     font-style:normal;
+    display:inline-block;
+    padding-top:8px;
+    color:#999;
 }
 
-/* Clear donation images */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(1) img,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(1) img,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(3) img,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(3) img,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(1),
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(3)
-{
-	display:none;
+/* Oneliner messages */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2) font,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(1) > table > tbody > tr:nth-child(2) > td:nth-child(2) > table > tbody > tr > td font,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(1) > table > tbody > tr:nth-child(2) > td:nth-child(2) > table > tbody > tr > td b {
+    font-size:12px !important; 
+    line-height:15px !important; 
 }
 
-/* Make donation table full width */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table {
-	width:100%;   
+/* "Make a donation" button */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(2) > input,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(12) > td:nth-child(2) > form > table > tbody > tr > td > font > center > input {
+    border:0;
+    background-color:#CF4A4A;
+    padding:5px 10px 5px 10px;
+    font-size:12px !important;
+    border-radius:5px !important;
+    font-weight:bold !important;
+    text-transform:uppercase;
+    margin:10px 0 10px 0;
+    color:#FFF !important;
 }
 
-/* Donate title */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3):before {
-	content:"DONATE";
-    display:block;
-    text-align:center;
-    font-size:13px;
-    color:#bbb;
-    font-weight:bold;
-    padding:0 0 5px 0;
-	border-bottom:1px dashed #555;
-    margin-bottom:7px;
-    font-family:Open Sans;
+/* BR tag under "Funding status" */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > br {
+    display:block;    
 }
 
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(2),
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(2) > table,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(2),
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(2) > table > tbody,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody ,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table, 
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(2) {
-	width:100% !important;   
-    padding:0 !important;
+/* Funding status image padding */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(2) img {
+    padding:4px 0 4px 0;
 }
 
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(2)  font {
-	color:#ddd;   
+/* We love header */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(2):before {
+    content:"We love";
+    padding-top:20px;   
 }
 
-/* Clear We love images */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(1) img,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(1),
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(3),
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(3) {
-	display:none;    
+/* We love images padding */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(2) > table img {
+    padding:5px 0 5px 0;   
 }
 
-/* We love title */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(2) > table:before {
-	content:"WE LOVE";
-    display:block;
-    text-align:center;
-    font-size:13px;
-    color:#bbb;
-    font-weight:bold;
-    padding:0 0 5px 0;
-	border-bottom:1px dashed #555;
-    margin-bottom:7px;
-    font-family:Open Sans;
-}
+/* 
+--------------------------------------
+// LEFT SIDEBAR
+--------------------------------------
+*/
 
-/* Keep the sidebar table on 100% width */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2) {
-	width:100%;   
-}
 
-/* A bit of whitespace around the main table */
+
+/* 
+--------------------------------------
+MAIN
+--------------------------------------
+*/
+
+/* Main table whitespace, left and right */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) {
-	padding:0 15px 0 15px;
+    padding:0 0 0 15px;
+    margin:0;
 }
 
-/* A bit of whitespace inside the main table */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table {
-    width:100%;
-}
-
-/* Homepage section headers */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(6) > tbody > tr:nth-child(1) > td > b > a > font, 
+/* Section headers */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(6) > tbody > tr:nth-child(1) > td > b > a > font,
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(9) > tbody > tr:nth-child(1) > td > b,
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(12) > tbody > tr:nth-child(1) > td > b > a > font,
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(15) > tbody > tr:nth-child(1) > td > a > font > b,
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(1) > td > b {
-    font-size:18px !important;
-    line-height:12px;
-    color:#DDD;
-}
-
-/* Table headers on the main page */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(6) > tbody > tr:nth-child(1) td,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(9) > tbody > tr:nth-child(1) td,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(12) > tbody > tr:nth-child(1) td,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(15) > tbody > tr:nth-child(1) td ,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(1) td
-{
-   	padding:0px 0 12px 10px;
-    border-bottom:1px dashed #444;
-}
-
-/* Table width is 100% */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table {
-    width:100%;
-}
-
-/* Need some whitespace inbetween tables */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table {
-    padding-bottom:30px;
-}
-
-/* Style on the table cells */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table td {
-	padding:5px 10px 5px 10px;
-    border-bottom:1px dashed #333;
-    background:none;
-}
-
-/* Bigger fonts, please */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table td font {
-	font-size:13px;
-    color:#bbb;
-}
-
-/* Link colors on the main area */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table a {
-	color:#79A7E6;   
-}
-
-/* Link color hover */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table a:hover {
-	color:#A3C5F3;
-    text-decoration:none;
-}
-
-/* Latest releases and latest additions table headers */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(6) > tbody > tr:nth-child(2) font,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(9) > tbody > tr:nth-child(2) font {
-	font-weight:bold;
-    color:#EEE;
-}
-
-/* News styling */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td td, body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(3) {
-    border:none;
-    padding:0;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td > table > tbody > tr > td > font  {
-	display:block;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(11) > td {
-	padding-top:40px !important;   
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(12) > td > textarea {
-    width:60%;
-    height:300px;
-    border:none;
-    background-color:#ccc;
-    color:#333;
-    padding:10px;
-    margin-bottom:10px;
-}
-/* News style end */
-
-
-/* Right sidebar */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) {
-	background-color:#2b2b2b !important;
-    padding:5px;
-
-}
-
-/* Clear images from right sidebar */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table img {
-	display:none;
-}
-
-/* Right sidebar link color */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td a {
-    color:#79A7E6;   
-}
-
-/* Right sidebar hover color */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td a:hover {
-	color:#A3C5F3;
-    text-decoration:none;
-}
-
-/* Right sidebar headers */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr > td b {
-	display:block;
-    padding:15px 0 5px 0;
-    margin:0;
-    border-bottom:1px dashed #444;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(1) > td:nth-child(2) > b {
- 	padding:0 0 5px 0;   
-}
-
-/* Whitespace above right sidebar select */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(3) > table {
-    width:100%; 
-    padding:5px 0 0 0;
-}
-
-/* Right sidebar select */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(3) > table > tbody > tr:nth-child(1) > td > select {
-	width:100%;   
-}
-
-/* Right sidebar input */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(3) > table > tbody > tr:nth-child(2) > td > input.in1 {
-    border:0;
-    width:86%;
-    padding:2px;
-}
-
-/* Advanced search */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(3) > table > tbody > tr:nth-child(3) > td {
-	text-align:center;   
-}
-
-/* Advanced search */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(3) > table > tbody > tr:nth-child(3) > td font {
-	font-size:11px;   
-}
-
-/* Guests */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(6) > td:nth-child(2) > table > tbody > tr > td > font {
-	color:#666 !important;  
-    font-size:11px;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(1) > td:nth-child(2) > b:before {
-    content:url('https://cdnjs.cloudflare.com/ajax/libs/fatcow-icons/20130425/FatCow_Icons16x16/magnifier.png');
+    font-size:17px !important;
+    font-weight:normal !important;
     display:inline-block;
-    padding:0 5px 0 0;
-    vertical-align:middle;
+    padding:0 0 7px 0;
+    color:#AAA;
+    line-height:7px !important;
 }
 
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(3) > td:nth-child(2) > b > a > font:before {
-    content:url('https://cdnjs.cloudflare.com/ajax/libs/fatcow-icons/20130425/FatCow_Icons16x16/email.png');
+/* Section spacers (bottom) */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(6),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(9), 
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(12),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(15) {
+    margin-bottom:30px;
+}
+
+/* Section table cell whitespace */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(6) > tbody td,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(9) > tbody td,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(12) > tbody td, 
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(15) > tbody td {
+    border-bottom:1px dashed #222;
+    padding:4px 0 4px 0;
+}
+
+/* "See posts since your last visit to CSDb" */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(12) > tbody > tr:nth-child(1) > td > a > font {
+    color:#666;
+    font-size:12px !important;
+}
+
+/* 
+--------------------------------------
+MAIN / NEWS
+--------------------------------------
+*/
+
+/* Posted by */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td > table > tbody > tr > td > font > b {
     display:inline-block;
-    padding:0 5px 0 0;
-    vertical-align:middle;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(5) > td:nth-child(2) > b:before {
-	content:url('https://cdnjs.cloudflare.com/ajax/libs/fatcow-icons/20130425/FatCow_Icons16x16/user.png');
-    display:inline-block;
-    padding:0 5px 0 0;
-    vertical-align:middle;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(7) > td:nth-child(2) > b > a > font:before,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(9) > td:nth-child(2) > b > a > font:before {
-	content:url('https://cdnjs.cloudflare.com/ajax/libs/fatcow-icons/20130425/FatCow_Icons16x16/medal_award_gold.png');
-    display:inline-block;
-    padding:0 5px 0 0;
-    vertical-align:middle;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(11) > td:nth-child(2) > b > a > font:before {
-	content:url('https://cdnjs.cloudflare.com/ajax/libs/fatcow-icons/20130425/FatCow_Icons16x16/events.png');
-    display:inline-block;
-    padding:0 5px 0 0;
-    vertical-align:middle;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr > td > table > tbody > tr > td font {
+    padding-top:20px;
     color:#999;
 }
 
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td {
-    border:none;  
+/* Some styling on the news tables */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr > td > table > tbody > tr td {
+    vertical-align:bottom !important;
 }
 
+/* width:99%? ಠ_ಠ */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td > table {
+    width:100%;
+}
+
+/* Posted on */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) font {
+    color:#555 !important;
+}
+
+/* 
+--------------------------------------
+// MAIN
+--------------------------------------
+*/
+
+
+
+/* 
+--------------------------------------
+RIGHT SIDEBAR
+--------------------------------------
+*/
+
+/* Clear it up from border images */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(1) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(3) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(4) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(5) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(6) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(7) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(8) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(9) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(10) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(11) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(12) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(13),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(14) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(15),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(16) > td:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(17) {
+    display:none;
+}
+
+/* Headers in the right sidebar (inner pages as well) */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(1) > td > b,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(3) > td:nth-child(2) > b > a > font,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(5) > td:nth-child(2) > b,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(7) > td:nth-child(2) > b > a > font,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(9) > td:nth-child(2) > b > a > font,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(11) > td:nth-child(2) > b > a > font,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(11) > td:nth-child(2) > b > a > font,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(7) > td:nth-child(2) > b,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(7) > td:nth-child(2) > b,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(3) > td:nth-child(2) > b,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(9) > td:nth-child(2) > b,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(11) > td:nth-child(2) > b
+{
+    font-size:14px !important;
+    line-height:14px !important;
+    color:#ddd;
+    display:block;
+    padding:15px 0 5px 0;
+    font-weight:normal !important;
+    text-transform:uppercase;
+    text-align:left;
+}
+
+/* Remove upper padding from search */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > table > tbody > tr:nth-child(1) > td > b {
+    padding-top:0;
+}
+
+/* 
+--------------------------------------
+// RIGHT SIDEBAR
+--------------------------------------
+*/
+
+
+
+/* 
+--------------------------------------
+FORUM
+--------------------------------------
+*/
+
+/* 
+--------------------------------------
+Forum posts since last login. 
+http://csdb.dk/latestforumposts.php
+--------------------------------------
+*/
+
+/* Main container padding */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) {
-	width:100%;
-    margin:0;
-    padding:0 20px 0 0;
+    padding-right:15px;
 }
 
-/* Release header full width */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(1) {
-	width:100%;
+/* BR under Forum posts written the last 7 days. */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > br {
+    display:none;   
 }
 
-/* Release page font */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) font {
-	color:#aaa;
-    font-size:13px;
-}
-
-/* Year of release - Why the three &nsbp;s?? */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(1) {
-    
-	font-size:12px;   
-}
-
-/* Main title font */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(1) > font {
-	color:#eee;
-    font-size:48px;
-    line-height:40px;
-    margin-bottom:15px;
-}
-
-/* Release date spacing */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(3) > tbody > tr > td:nth-child(2) > font {
-	padding-bottom:0;
-}
-
-/* Release date spacing - Why another BR? */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(3) > tbody > tr > td:nth-child(2) > br:nth-child(9) {
- 	display:none;   
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(3) > tbody > tr > td:nth-child(1) {
-	padding:0 30px 0 0; 
+/* ಠ_ಠ */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table {
     margin:0 !important;
-    vertical-align:top;
+    padding:0 !important;
+}
+
+/* Normal text */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody td a,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td:nth-child(3n){
+    font-weight:normal  !important;
+    font-size:13px !important;
+}
+
+/* BRs above and under "Forum posts written the last 7 days." ಠ_ಠ */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > br:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > br:nth-child(3) {
+    display:none !important;
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td br {
+    display:block !important;
+}
+
+/* Forum topics table */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table {
+    width:100%;
+}
+
+/* Forum topic table headers */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:nth-child(1),
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:nth-child(1) b {
+    font-weight:bold !important;
+    color:#999 !important;
+}
+
+/* Topic field */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:nth-child(1) > td:nth-child(1) {
+    width:60%;
+}
+
+/* Forum topics table cells */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody td {
+    padding:8px 10px 8px 0;
+    border-bottom:1px dashed #444;
+    text-align:left !important;
+}
+
+/* 
+--------------------------------------
+// Forum posts since last login. 
+--------------------------------------
+*/
+
+
+
+/* 
+--------------------------------------
+// FORUM
+--------------------------------------
+*/
+
+
+
+/* 
+--------------------------------------
+RELEASE PAGE
+--------------------------------------
+*/
+
+/* Release page */
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(1) {
+	font-size:15px !important;   
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > br {
+	display:block;
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table b {
+	color:#aaa;
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(1) > font {
+	font-size:36px !important;
+    color:#DDD;
 }
 
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(3) > tbody > tr > td:nth-child(1) {
-	width:10%;
-    padding-left:20px;
-}
-
-/* Credits table */
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr td {
-    padding:5px 0 5px 5px !important;
-    background:none;
-	border:none;
+	padding:20px 20px 0 0;    
 }
 
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(3) > tbody > tr > td:nth-child(2) {
-	padding-left:20px !important;   
+    padding:17px 0 0 0;
 }
 
-/* Styling HR */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > hr {
-    border:none;
-    border-bottom:1px dashed #666;
-    background:none;
-    margin-top:20px;
-    margin-bottom:20px;
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(2) > font, body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(2) a {
+	font-size:11px !important;
+    line-height:14px !important;
 }
 
-/* Comments need a bit of spacing */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td > font {
-	display:block;
-    margin:0 0 0 0;
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(42){
+   width:100%; 
 }
 
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td  blockquote {
-	font-size:12px;
-    background-color:#2e2e2e ;
-    padding:10px;
-    margin-bottom:15px;
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > b {
+	display:inline-block;
+    padding:5px 0 0 0;
 }
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(1),
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td > font {
-	padding:0;
-    margin:0;
-}
-
-/* Spacer between forum breadcrumb and notify */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > br {
-	display:block;
-    padding:8px;
-    content:"";
-}
-
-/* Align the radio buttons vertically */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(2) > tbody > tr > td > input[type="radio"] {
-    vertical-align: middle;
-}
-
-/* Small font is too small */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(2) > tbody > tr > td > small {
-    font-size:12px;
-}
-
-/* Too much whitespace under forum title */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > br:nth-child(3) {
-	display:none;   
-}
-
-/* Forum post, adding a bit of whitspace */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr td {
-	
-	padding:15px;
-	border-bottom:1px solid #333;
-}
-
-/* The thread table */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td {
-    border:none;
-	background-color:#171717 !important;   
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) {
-	width:100%;   
-}
-
-/* Post headers (time, ignore users, reply button, etc) */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td {
- 	border:none;
-    padding: 0;
-}
-
-/* Post header fonts */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td:nth-child(2) font,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(1) font
-{
-	font-size:11px;   
-}
-
-/* Latest forum posts */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td {
-	vertical-align:top;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody td {
-	padding:0 !important;   
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td  {
-    padding:15px !important;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td > font {
-	padding:0;   
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td {
-    font-family:Open Sans;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td {
-	padding:0;
-    margin:0;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td hr {
-    border:none;
-    border-bottom:1px dashed #444;
-    background:none;
-    margin-top:15px;
-}
-
-/* Quote in forum */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td blockquote {
-	font-size:12px;
-    background-color:#252525 !important;
-    padding:10px;
-    margin-bottom:0;   
-}
-
-/* Full width on forum topic table */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table {
-	width:100%;   
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td {
-	padding:0 !important;
-    margin:0 !important;
-}
-
-/* Forum topic table rows hover */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:hover {
-	background-color:#1f1f1f !important;   
-}
-
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(1),
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(1),
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(3)
-{
-	display:none;
-}
-
-/* Scener page */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(3) > tbody > tr > td:nth-child(3) font {
-    display:inline !important;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(1) > font:nth-child(1) {
-	line-height:20px;
-    padding-top:10px;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(1) > font:nth-child(2) {
-	font-size:13px;   
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form  {
-	text-align:center;   
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form  textarea {
-    background-color:#eee;
-    border:none;
-    height:300px;
-    width:80%;
-    margin-top:20px;
-    font-family:Open Sans;
-    padding:10px;
-    color:#333;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > font:nth-child(10) {
-    padding:20px;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td  hr {
-    border:none;
-    border-bottom:1px dashed #666;
-    background:none;
-
-}
-
-/* Footer */
-body > center:nth-child(2) a {
-    font-size:12px !important;
-	color:#79A7E6;  
-}
-
-body > center:nth-child(3) font {
-	color:#888;    
-}
-
-/* Page rendered message */
-body > div > font {
-	display:none;
-}
+/* 
+--------------------------------------
+// RELEASE PAGE
+--------------------------------------
+*/
