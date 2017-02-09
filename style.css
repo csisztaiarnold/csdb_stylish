@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 
 /* 
 --------------------------------------
@@ -51,6 +52,19 @@ body, table {
     margin:0;
     border:0;
     background:none !important;
+}
+
+/* [code] */
+pre {
+    font-family: 'Ubuntu Mono', monospace !important;
+    font-size:13px !important;
+    line-height:17px !important;
+    font-weight:bold !important;
+    background-color:#111;
+    padding:20px;
+    color:#777 !important;
+    border:1px solid #222;
+    display:inline-block;
 }
 
 body {
@@ -589,6 +603,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr:last-child > td {
     border:none !important;
     padding-top:25px !important;
+    text-align:center;
 }
 
 /*  Post time and ignore post from this user text */
@@ -711,6 +726,14 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
     margin:10px 0 10px 0;
     display:inline-block;
     font-size:13px !important;
+    text-align:center;
+    font-weight:bold;
+    background-color:#111;
+}
+
+/* Pagination and Post Reply are centered */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr:nth-child(3) > td {
+    text-align:center !important;
 }
 
 /* Hide PM, quote and button */
