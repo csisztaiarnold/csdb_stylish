@@ -11,8 +11,8 @@ GENERAL STYLES
 * {
     font-family:"Open Sans" !important;
     font-size:13px !important;
-    line-height:22px !important;
-    color:#888;
+    line-height:20px !important;
+    color:#999;
 }
 
 /* Links 
@@ -36,7 +36,7 @@ margin:0;
 
 /* Quotes */
 blockquote {
-    background-color:#222;
+    background-color:#181818;
     padding:10px;
 }
 
@@ -506,6 +506,22 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
     padding:0 !important;
 }
 
+/* ಠ_ಠ */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) {
+ 	width:100%;   
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(2) > tbody > tr  td {
+    vertical-align:middle;   
+    padding:10px 10px 10px 0;
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form input {
+	display:inline-block;
+    margin-top:-2px;
+    vertical-align:middle;       
+}
+
 /* Normal text */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody td a,
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td:nth-child(3n){
@@ -543,12 +559,191 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
     width:60%;
 }
 
-/* Forum topics table cells */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody td {
-    padding:8px 10px 8px 0;
-    border-bottom:1px dashed #444;
-    text-align:left !important;
+/* Hide the strange paper icon infront of post time */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td:nth-child(odd)  img {
+	display:none;   
 }
+
+/* Add a clock icon infront of the time */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > font > a font:first-child:before  {
+	content:"⌚";
+    padding-right:5px;
+}
+
+/* Add spacing after time and nick for whitespace */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > font > a font:nth-child(2):after, 
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > b > a:after  {
+    padding-right:10px !important;
+    content:"" !important;
+}
+
+/* Forum thread and topic list table */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table > tbody > tr > td > table > tbody > tr > td,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr td
+{
+    padding:8px 10px 8px 0;
+    border-bottom:1px dashed #333;
+}
+
+/* Remove border from the last table cell */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr:last-child > td {
+    border:none !important;
+    padding-top:25px !important;
+}
+
+/*  Post time and ignore post from this user text */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > font > a font,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td font,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > font a,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > font > a font {
+	font-size:11px !important;
+    line-height:0px !important;
+
+}
+
+/* Line up post time and ignore post from this user text */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > font > a font {
+	padding:0 !important;
+    margin:0 !important;
+    line-height:26px !important;
+}
+
+/* Nick should be more visible */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > b > a {
+	font-weight:bold !important;
+    font-size:15px !important;
+}
+
+/* More padding under the post text, so the posts look more divided */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > font,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > font:last-child {
+    display:block;
+    padding-bottom:40px;
+}
+
+/* 2 BRs instead of paragraphs? ಠ_ಠ */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td br {
+	height:8px !important;
+    margin:0 !important;
+    font-size:1px !important;
+    display:block;
+    content:"";
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:first-child font {
+    font-size:11px !important;
+    color:#777;
+}
+
+/* Remove BRs under the nick */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:first-child br {
+	height:0 !important;
+    margin:0 !important;
+    font-size:1px !important;
+    display:block;
+    content:"";
+}
+
+/* First BR needs more height so there is whitespace under the nick */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:first-child br:first-child {
+	 height:16px !important;  
+}
+
+/* Sometimes there is an I element under the nick */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > font > i {
+    display:block;
+    padding-bottom:15px;
+}
+
+/* Hide Post reply and start topic button */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr:last-child > td > a img,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > a:last-child img {
+	display:none;   
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > a:last-child {
+	display:inline-block;
+    margin:20px 0 20px ;
+}
+
+/* New Post reply and start topic button */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr:last-child > td > a:before,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > a:last-child:before
+{
+    content:"Post Reply";
+    border:0;
+    background-color:#CF4A4A;
+    padding:10px 35px 10px 35px;
+    font-size:15px !important;
+    border-radius:5px !important;
+    font-weight:bold !important;
+    text-transform:uppercase;
+    margin:10px 0 10px 0;
+    color:#FFF !important;
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > a:last-child:before {
+    content:"Start new topic";   
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr:last-child > td > a:hover,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > a:hover {
+	text-decoration:none;   
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr:nth-child(17) > td > a:hover {
+	text-decoration:none;   
+}
+
+/* Remove spacing from HR in the forum */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > font hr {
+	margin-bottom:0;   
+}
+
+/* Remove BRs from hidden posts cell ಠ_ಠ */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr:nth-child(3) > td > font br {
+	display:none;   
+}
+
+/* Hidden posts link */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr:nth-child(3) > td > font {
+    padding:10px 20px 10px 20px;
+    margin:10px 0 10px 0;
+    display:inline-block;
+    font-size:13px !important;
+}
+
+/* Hide PM, quote and button */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(1) > a img,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > a:nth-child(1) img,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > a:nth-child(2) img {
+	display:none !important;   
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(1) > a:before {
+	content:url('https://cdnjs.cloudflare.com/ajax/libs/fatcow-icons/20130425/FatCow_Icons16x16/email.png');
+    display:inline-block;
+    padding-top:5px;
+    padding-left:10px;
+    opacity:0.7;
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > a:nth-child(1):before {
+    content:url('https://cdnjs.cloudflare.com/ajax/libs/fatcow-icons/20130425/FatCow_Icons16x16/document_quote.png');
+    display:inline-block;
+    padding-top:4px;  
+    padding-left:10px;
+	opacity:0.7;
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > a:nth-child(2):before {
+    content:url('https://cdnjs.cloudflare.com/ajax/libs/fatcow-icons/20130425/FatCow_Icons16x16/page_code.png');
+    display:inline-block;
+    padding-top:4px;    
+    padding-left:10px;
+	opacity:0.7;
+}
+
 
 /* 
 --------------------------------------

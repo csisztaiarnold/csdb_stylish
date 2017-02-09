@@ -12,6 +12,7 @@ A minimalistic, cleaner looking style for [CSDb](http://csdb.dk/)
 ## Known issues
 - Quotes which are quoted by clicking on the "quote" button in the forum couldn't be styled (only the hr under them)
 - On the latest forum posts page, there is an nbsp entity before the poster's handle which cant be removed, so the text couldn't be aligned vertically to the top
+- Image inputs can't be replaced
 
 ## Todo
 - Form styling
