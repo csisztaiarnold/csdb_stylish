@@ -67,6 +67,10 @@ pre {
     display:inline-block;
 }
 
+pre > a {
+    font-family: 'Ubuntu Mono', monospace !important;   
+}
+
 body {
     width:100%;
     background-color:#000 !important;
@@ -249,7 +253,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 
 /* Oneliner header */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2):before {
-    content:"💩";
+    content:"??";
     padding-top:20px;
 }
 
@@ -409,7 +413,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
     vertical-align:bottom !important;
 }
 
-/* width:99%? ಠ_ಠ */
+/* width:99%? ?_? */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td > table {
     width:100%;
 }
@@ -514,13 +518,13 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
     display:none;   
 }
 
-/* ಠ_ಠ */
+/* ?_? */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table {
     margin:0 !important;
     padding:0 !important;
 }
 
-/* ಠ_ಠ */
+/* ?_? */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) {
  	width:100%;   
 }
@@ -543,7 +547,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
     font-size:13px !important;
 }
 
-/* BRs above and under "Forum posts written the last 7 days." ಠ_ಠ */
+/* BRs above and under "Forum posts written the last 7 days." ?_? */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > br:nth-child(1),
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > br:nth-child(3) {
     display:none !important;
@@ -580,7 +584,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 
 /* Add a clock icon infront of the time */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > font > a font:first-child:before  {
-	content:"⌚";
+	content:"?";
     padding-right:5px;
 }
 
@@ -636,7 +640,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
     padding-bottom:40px;
 }
 
-/* 2 BRs instead of paragraphs? ಠ_ಠ */
+/* 2 BRs instead of paragraphs? ?_? */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td br {
 	height:8px !important;
     margin:0 !important;
@@ -715,7 +719,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 	margin-bottom:0;   
 }
 
-/* Remove BRs from hidden posts cell ಠ_ಠ */
+/* Remove BRs from hidden posts cell ?_? */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr:nth-child(3) > td > font br {
 	display:none;   
 }
