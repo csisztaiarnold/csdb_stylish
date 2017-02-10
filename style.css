@@ -126,7 +126,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > 
     width:135px;
     height:70px;
     position:absolute;
-    top:2px;
+    top:7px;
     left:0;
     text-align:center;
 }
@@ -163,10 +163,19 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > 
     padding:0 0 20px 0;
 }
 
+/* View mode and "You are logged in as..." */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(3) > font > b > a > font,
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(3) > font > b:nth-child(2),body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td > font > b:nth-child(1) > a > font,
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td > font > b {
     font-size:11px !important;  
+}
+
+/* The TR for the View mode and logged in element... For some reason, this TR has one cell on the home and three in the inner pages ಠ_ಠ Quite irrelevant info anyway, let's just move it to the upper right corner */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr {
+    padding:0 !important;
+    position:absolute;
+    top:5px;
+    right:10px;
 }
 
 /* Remove menu images */
@@ -183,8 +192,8 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > 
     font-weight:bold;
     padding:5px 10px 5px 10px;
 	background-color:#222;
-    margin-right:5px;
     text-transform:uppercase;
+    margin:10px 5px 20px 0;
 }
 
 /* Hover */

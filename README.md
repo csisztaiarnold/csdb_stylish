@@ -1,6 +1,6 @@
 # CSDb Stylish
 A minimalistic, cleaner looking style for [CSDb](http://csdb.dk/)
-![image](http://i.imgur.com/JjX5IWJ.png)
+![image](http://i.imgur.com/ju8NeWw.png)
 [Youtube preview](https://www.youtube.com/watch?v=mLMcTCREKf8)
 
 ## Installation
@@ -13,10 +13,10 @@ A minimalistic, cleaner looking style for [CSDb](http://csdb.dk/)
 - Quotes which are quoted by clicking on the "quote" button in the forum couldn't be styled (only the hr under them)
 - On the latest forum posts page, there is an nbsp entity before the poster's handle which cant be removed, so the text couldn't be aligned vertically to the top
 - Image inputs can't be replaced
+- Works fine only when logged in (some selectors won't point to the same elements in logged out status)
 
 ## Todo
 - Form styling
 - Userpage
 - Advanced search
-- Works only when logged in
-- Needs more commenting
+- Test in Firefox and IE
