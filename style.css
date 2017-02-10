@@ -1,4 +1,4 @@
-@-moz-document domain(csdb.dk) {
+
     
 /* 
 --------------------------------------
@@ -645,13 +645,6 @@ FORUM
 --------------------------------------
 */
 
-/* 
---------------------------------------
-Forum posts since last login. 
-http://csdb.dk/latestforumposts.php
---------------------------------------
-*/
-
 /* Main container padding */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) {
     padding-right:15px;
@@ -884,45 +877,10 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
     text-align:center !important;
 }
 
-/* Hide PM, quote and button */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > a img,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > a:nth-child(1) img,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > a:nth-child(2) img {
-	display:none !important;   
+/* Edit, PM, Quote, BBQuote button spacing */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > a img {
+    padding-left:5px;
 }
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(1) > a:before {
-	content:url('https://cdnjs.cloudflare.com/ajax/libs/fatcow-icons/20130425/FatCow_Icons16x16/email.png');
-    display:inline-block;
-    padding-top:5px;
-    padding-left:10px;
-    opacity:0.7;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > a:nth-child(1):before {
-    content:url('https://cdnjs.cloudflare.com/ajax/libs/fatcow-icons/20130425/FatCow_Icons16x16/document_quote.png');
-    display:inline-block;
-    padding-top:4px;  
-    padding-left:10px;
-	opacity:0.7;
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > a:nth-child(2):before {
-    content:url('https://cdnjs.cloudflare.com/ajax/libs/fatcow-icons/20130425/FatCow_Icons16x16/page_code.png');
-    display:inline-block;
-    padding-top:4px;    
-    padding-left:10px;
-	opacity:0.7;
-}
-
-
-/* 
---------------------------------------
-// Forum posts since last login. 
---------------------------------------
-*/
-
-
 
 /* 
 --------------------------------------
@@ -983,5 +941,3 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 // RELEASE PAGE
 --------------------------------------
 */
-    
-}
