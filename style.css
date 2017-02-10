@@ -253,7 +253,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 
 /* Oneliner header */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > form:nth-child(2):before {
-    content:"??";
+    content:"💩";
     padding-top:20px;
 }
 
@@ -413,7 +413,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
     vertical-align:bottom !important;
 }
 
-/* width:99%? ?_? */
+/* width:99%? ಠ_ಠ */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td > table {
     width:100%;
 }
@@ -518,13 +518,13 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
     display:none;   
 }
 
-/* ?_? */
+/* ಠ_ಠ */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table {
     margin:0 !important;
     padding:0 !important;
 }
 
-/* ?_? */
+/* ಠ_ಠ */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) {
  	width:100%;   
 }
@@ -547,7 +547,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
     font-size:13px !important;
 }
 
-/* BRs above and under "Forum posts written the last 7 days." ?_? */
+/* BRs above and under "Forum posts written the last 7 days." ಠ_ಠ */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > br:nth-child(1),
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > br:nth-child(3) {
     display:none !important;
@@ -584,7 +584,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 
 /* Add a clock icon infront of the time */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > font > a font:first-child:before  {
-	content:"?";
+	content:"⌚";
     padding-right:5px;
 }
 
@@ -640,7 +640,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
     padding-bottom:40px;
 }
 
-/* 2 BRs instead of paragraphs? ?_? */
+/* 2 BRs instead of paragraphs? ಠ_ಠ */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td br {
 	height:8px !important;
     margin:0 !important;
@@ -719,7 +719,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 	margin-bottom:0;   
 }
 
-/* Remove BRs from hidden posts cell ?_? */
+/* Remove BRs from hidden posts cell ಠ_ಠ */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr:nth-child(3) > td > font br {
 	display:none;   
 }
@@ -741,9 +741,9 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 }
 
 /* Hide PM, quote and button */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(1) > a img,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > a:nth-child(1) img,
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > a:nth-child(2) img {
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > a img,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > a:nth-child(1) img,
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > a:nth-child(2) img {
 	display:none !important;   
 }
 
@@ -763,7 +763,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 	opacity:0.7;
 }
 
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > a:nth-child(2):before {
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > a:nth-child(2):before {
     content:url('https://cdnjs.cloudflare.com/ajax/libs/fatcow-icons/20130425/FatCow_Icons16x16/page_code.png');
     display:inline-block;
     padding-top:4px;    
