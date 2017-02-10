@@ -1,4 +1,4 @@
-
+@-moz-document domain(csdb.dk) {
     
 /* 
 --------------------------------------
@@ -298,10 +298,6 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > 
 
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(7):before {
 	content:"Donate";
-}
-
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(2):before {
-	content:"Log Out";
 }
 
 /* 
@@ -941,3 +937,5 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 // RELEASE PAGE
 --------------------------------------
 */
+    
+}
