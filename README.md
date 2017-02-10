@@ -1,6 +1,6 @@
 # CSDb Stylish
 A minimalistic, cleaner looking style for [CSDb](http://csdb.dk/)
-![image](http://i.imgur.com/Le2juHg.png)
+![image](http://i.imgur.com/JjX5IWJ.png)
 [Youtube preview](https://www.youtube.com/watch?v=mLMcTCREKf8)
 
 ## Installation
