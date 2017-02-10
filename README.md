@@ -1,13 +1,12 @@
 # CSDb Stylish
 A minimalistic, cleaner looking style for [CSDb](http://csdb.dk/)
 ![image](http://i.imgur.com/ju8NeWw.png)
-[Youtube preview](https://www.youtube.com/watch?v=mLMcTCREKf8)
 
 ## Installation
-1. [Install the stylish addon/plugin](https://userstyles.org/) on your browser of choice
-2. Create a new style
-3. Copy and paste the stylesheet
-4. Save
+1. Go to [userstyles.org](https://userstyles.org/) and install the stylish addon/plugin on your browser of choice
+![image](http://i.imgur.com/zbUUbpq.png)
+2. Now go to [CSDb's style page](https://userstyles.org/styles/138738/csdb-minimal-edition) and click on the **Install with Stylish button**
+![imaga](http://i.imgur.com/FxugmTP.png)
 
 ## Known issues
 - Quotes which are quoted by clicking on the "quote" button in the forum couldn't be styled (only the hr under them)
