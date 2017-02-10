@@ -20,8 +20,18 @@ GENERAL STYLES
 
 a > font is used everywhere, but it doesn't seem like a good idea to set it globally, as it fucks up some anchored titles 
 */
-a, a:hover, a > b {
+a, a > b {
     color:#528BC5 !important;
+    transition: all .3s ease-out;
+}
+
+a:before, a:after {
+    transition: all .3s ease-out; 
+}
+
+a:hover {
+	color:#82B2E3 !important;
+    text-decoration:none !important;
 }
 
 /* Strong */
@@ -31,8 +41,8 @@ b {
 
 /* Images */
 img {
-padding:0;
-margin:0;
+    padding:0;
+    margin:0;
 }
 
 /* Quotes */
@@ -113,10 +123,10 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 /* Position the new logo absolutely */
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(2) > a {
     display:block;
-    width:150px;
+    width:135px;
     height:70px;
     position:absolute;
-    top:4px;
+    top:2px;
     left:0;
     text-align:center;
 }
@@ -125,7 +135,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > 
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(2) > a:before {
     display:inline-block;
     text-align:center;
-    font-size:44px;
+    font-size:50px;
     line-height:44px;
     font-weight:bold;
     padding:5px 10px 5px 0;
@@ -138,13 +148,13 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > 
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(2) > a:after {
     display:inline-block;
     text-align:center;
-    font-size:9px;
+    font-size:10px;
     line-height:0;
     font-weight:bold;
-    padding:2px 10px 5px 0;
-    content:"Commodore Scene Database";
+    padding:6px 10px 5px 0;
+    content:"The C-64 Scene Database";
     font-family:Oswald;
-    color:#F5F5F5;
+    color:#8E9CD8 !important;
 }
 
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(3) > font, body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td > font {
@@ -159,6 +169,66 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > 
     font-size:11px !important;  
 }
 
+/* Remove menu images */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a img {
+	display:none;
+}
+
+/* New menu items */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:before  {
+    display:inline-block;
+    text-align:center;
+    font-size:12px;
+    color:#bbb;
+    font-weight:bold;
+    padding:5px 10px 5px 10px;
+	background-color:#222;
+    margin-right:5px;
+    text-transform:uppercase;
+}
+
+/* Hover */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:hover:before {
+	color:#FFF;
+    background-color:#333;
+    border-radius:5px;
+}
+
+/* Menu labels 
+
+Note: this will fuck up the menu when a user is not logged in, as the labels change. Lurking is for lamahz anyways.
+*/
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(1):before {
+	content:"Userpage";
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(2):before {
+	content:"Browse";
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(3):before {
+	content:"Help";
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(4):before {
+	content:"Statistics";
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(5):before {
+	content:"Forums";
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(6):before {
+	content:"RSS";
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(7):before {
+	content:"Donate";
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > a:nth-child(2):before {
+	content:"Log Out";
+}
 
 /* 
 --------------------------------------
@@ -419,7 +489,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 }
 
 /* Posted on */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) font {
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(2) font {
     color:#555 !important;
 }
 
