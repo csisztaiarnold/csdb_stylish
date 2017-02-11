@@ -168,7 +168,16 @@ hr {
     padding:0;
 }
 
-
+/* General textarea style */
+textarea {
+	border:none;
+    width:60%;
+    background-color:#eee;
+    padding:5px;
+    color:#444;
+    height:250px;
+    margin:5px 0 15px 0;
+}
 
 /* 
 --------------------------------------
@@ -563,6 +572,11 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
     color:#555 !important;
 }
 
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(18) > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(11) > td > font {
+    display:block;
+    color:#ff0 !important;
+}
+
 /* 
 --------------------------------------
 // MAIN
@@ -802,7 +816,7 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 }
 
 /* Sometimes there is an I element under the nick */
-body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td > font > i {
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(4) > tbody > tr > td > form > table:nth-child(4) > tbody > tr > td > table > tbody > tr > td:first-child > font > i {
     display:block;
     padding-bottom:15px;
 }
