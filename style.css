@@ -930,8 +930,84 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 
 body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > b {
 	display:inline-block;
-    padding:5px 0 0 0;
+    padding:5px 0 0 0;    
 }
+
+/* Vote statistics */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > font:nth-child(1) > a {
+	font-size:18px !important; 
+    display:inline-block;
+    padding-bottom:10px;
+}
+
+/* WOW! A selector! More padding and some lines on the votes statistics table */
+#all > table td, #pub > table td {
+	padding:2px 0 2px 0;  
+    border-bottom:1px solid #111 !important;
+}
+
+#all > table > tbody > tr > td:nth-child(2) > img, #pub > table > tbody > tr > td:nth-child(2) > img {
+ 	border:4px solid #4CB200 !important;
+	border-left:0 !important;
+    border-right:0 !important;
+    margin:0 5px 0 5px;
+    height:0;
+}
+
+#all > table > tbody > tr:nth-child(2) > td:nth-child(2) > img,
+#pub > table > tbody > tr:nth-child(2) > td:nth-child(2) > img {
+	border-color:#52AD00 !important;
+}
+
+#all > table > tbody > tr:nth-child(3) > td:nth-child(2) > img,
+#pub > table > tbody > tr:nth-child(3) > td:nth-child(2) > img {
+ 	border-color:#54AA00 !important;
+}
+
+#all > table > tbody > tr:nth-child(4) > td:nth-child(2) > img,
+#pub > table > tbody > tr:nth-child(4) > td:nth-child(2) > img {
+ 	border-color:#57A800 !important;
+}
+
+#all > table > tbody > tr:nth-child(5) > td:nth-child(2) > img,
+#pub > table > tbody > tr:nth-child(5) > td:nth-child(2) > img {
+ 	border-color:#659900 !important;
+}
+
+#all > table > tbody > tr:nth-child(6) > td:nth-child(2) > img,
+#pub > table > tbody > tr:nth-child(6) > td:nth-child(2) > img {
+ 	border-color:#916D00 !important;
+}
+
+#all > table > tbody > tr:nth-child(7) > td:nth-child(2) > img,
+#pub > table > tbody > tr:nth-child(7) > td:nth-child(2) > img {
+ 	border-color:#AA5500 !important;
+}
+
+#all > table > tbody > tr:nth-child(8) > td:nth-child(2) > img,
+#pub > table > tbody > tr:nth-child(8) > td:nth-child(2) > img {
+ 	border-color:#BE4100 !important;
+}
+
+#all > table > tbody > tr:nth-child(9) > td:nth-child(2) > img,
+#pub > table > tbody > tr:nth-child(9) > td:nth-child(2) > img {
+ 	border-color:#C93500 !important;
+}
+
+#all > table > tbody > tr:nth-child(10) > td:nth-child(2) > img,
+#pub > table > tbody > tr:nth-child(10) > td:nth-child(2) > img {
+ 	border-color:#D62600 !important;
+}
+
+#all > table > tbody > tr:nth-child(11) > td:nth-child(2) > img,
+#pub > table > tbody > tr:nth-child(11) > td:nth-child(2) > img {
+ 	border-color:#FE0100 !important;
+}
+
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody td {
+	padding:2px;
+}
+
 /* 
 --------------------------------------
 // RELEASE PAGE
