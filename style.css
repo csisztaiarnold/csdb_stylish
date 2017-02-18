@@ -1022,6 +1022,28 @@ body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > 
 	padding:2px;
 }
 
+/* Comment's text */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td > font {
+    color:#EEE; 
+}
+
+/* Comment's quotes: smaller font and a a bit of padding above */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td > font > font {
+    display:block;
+    font-size:12px !important;
+    padding-top:10px;
+}
+
+/* Less margin under quotes */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td > font > font > blockquote {
+    margin-bottom:0 !important;
+}
+
+/* "Created by" text color */
+body > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr > td > table:nth-child(1) > tbody > tr > td:nth-child(2) > font {
+    color:#999 !important;
+}
+
 /* 
 --------------------------------------
 // RELEASE PAGE
